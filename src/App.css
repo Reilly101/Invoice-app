@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap");
+
+.screen {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leftrectangle {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 103px;
   align-items: center;
+  height: 800px;
+  background: #373b53;
+  border-radius: 0px 20px 20px 0px;
+}
+.bottomleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottomleft .face {
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+.main_container {
+}
+.header {
+}
+.row {
+  display: flex;
+  width: 730px;
+  height: 72px;
+  justify-content: space-between;
+}
+.invoicesdata {
+  display: flex;
+  align-items: center;
+}
+
+.invoice_middle_box {
+  margin: 20px;
+}
+.invoices {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -1px;
+  color: #0c0e16;
+}
+.totalnumber {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #888eb0;
+}
+.filterbystatus {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #0c0e16;
+  margin-left: 280px;
+}
+.purplebutton {
+  background: #7c5dfa;
+  border-radius: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 48px;
+  margin-left: 40px;
+}
+.purplebutton img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+.invoice_middle_box {
+  width: 730px;
+  height: 600px;
+}
+.arrow {
+  border: 2px solid #7c5dfa;
+  width: 4px;
+  height: 8px;
+}
+.greytext {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #7e88c3;
+}
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+.gobackcontainer svg {
+  width: 20px;
+  height: 13px;
+}
+.gobackcontainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.font15 {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.3125px;
+  color: #0c0e16;
 }
+.font12 {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #0c0e16;
+}
+.font16 {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+  color: #888eb0;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+}
+.selected {
+  background-color: purple;
+}
+.containerinvoice {
+  position: absolute;
+  width: calc(100% - 100px);
+  height: 100vh;
+  top: 0;
+  left: 100px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: flex-start;
+}
+.newinvoicebox {
+  background: #ffffff;
+  width: 616px;
+  padding:56px
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  grid-gap:24px
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  margin-bottom:24px;
+  
+}
+.input div {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: -0.25px;
+  padding-bottom:16px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #7e88c3;
+}
+.input input {
+  background: #ffffff;
+  border: 1px solid #dfe3fa;
+  border-radius: 4px;
+  width: 100%;
+  height: 48px;
+  padding: 16px 20px 16px 20px;
+  box-sizing: border-box;
+}
+.middlecontainerinvoice {
+  display: flex;
+  align-items: center;
+ flex-direction: space-between;
+
+}
+.itemlist {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: 'Spartan';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: -0.25px;
+color: #7E88C3;
+}
+.itemlisttitle {
+display : flex;
+flex-direction: row;
+align-content: flex-start;
+font-family: 'Spartan';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: -0.375px;
+color: #777F98;
 }
